@@ -8,3 +8,10 @@ require('@coreui/coreui');
 
 // Boilerplate
 require('../plugins');
+
+$( document ).ready(function() {
+    Livewire.on('toggleUserEditModal', function () {
+        $('#userBiodataEditModal').modal('toggle');
+    });
+});
+
